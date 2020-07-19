@@ -1,0 +1,324 @@
+*{
+    margin : 0;
+    padding  : 0
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#logo{
+    margin: 45px 45px;
+}
+#logo img{
+     height : 70px;
+     margin: 5px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai'
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+#navbar ul li{
+    list-style: none;
+    font-style: 1.3rem;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 10px 15px ;
+    border-radius: 25px;
+    text-decoration: none; 
+    font-size: 23px;
+
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    align-items: center;
+    height:715px;
+}
+#home::before{
+    content: "";
+    background: url('../res2.jpg') center;
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
+#home h1{
+    color:rgb(61, 20, 20);
+    text-align: center;
+    font-family: 'Bitter', serif;
+font-family: 'Titan One', cursive;
+}
+#home p{
+    color:black;
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+}
+
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding:34px;
+    margin: 2px 10px;
+    border-radius: 28px;
+    background: rgb(243, 219, 219);
+    
+}
+#services .box img{
+    height: 165px;
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#sevices .box p{
+       font-size: 15px;
+}
+#services{}
+#services{}
+#services{}
+/* client section       */
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../f22.jpg')no-repeat center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+        height: 130px;
+}
+/* contact session */
+#contact{
+     position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../contact1.jpg') no-repeat center;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px; 
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bitter', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bitter', serif;
+}
+.btn{
+    padding: 15px 20px;
+    border: 2px solid white;
+    background-color: rgb(163, 89, 89);
+    color: white;
+    margin: 17px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+ 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashu's Restuarant |AshuMeal.com  </title>
+<link rel="stylesheet" href="css1/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet"media="screen and (max-width: 1170px)" href="phone.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&family=Titan+One&display=swap');
+        </style>
+</head>
+<body>
+    <nav id ="navbar">
+        <div id="logo">
+            <img src="lg.png" alt="AshuMeal.com">
+
+
+        </div>
+        <ul>
+               <li class="item"><a href="#">Home</a></li>
+               <li class="item"><a href="#">Services</a></li>
+               <li class="item"><a href="#">About</a></li>
+               <li class="item"><a href="#">Contact us</a></li>
+               
+
+        </ul>
+
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> Welcome to Lingojipalli Restaurant </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum
+             ipsa exercitationem excepturi quia. Corporis cum corrup
+            ti, totam placeat, nam soluta </p>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum
+                ipsa exercitationem excepturi quia. Corporis cum corrup
+               ti, totam placeat, nam soluta </p>   
+        <button class="btn">Order Now</button>
+            </section>
+    <section class="services-container">
+        <h1 class="h-primary center"> Our Services</h1>
+     <div id="services">
+         <div class="box">
+             <img src="dosa.jpg" alt="">
+             <h2 class="h-secondary center">Food Catering</h2>
+             <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae 
+                 nulla fugit accusamus inventore consectetur illum, quibusdam,
+                  maiores autem modi fugit at?</p>
+         </div>
+         <div class="box">
+            <img src="food2.jpg" alt="">
+            <h2 class="h-secondary center">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae 
+                nulla fugit accusamus inventore consectetur illum, quibusdam,
+                 maiores autem modi fugit at?</p>
+        </div>
+        <div class="box">
+            <img src="delivery.jpg" alt="">
+            <h2 class="h-secondary center">Food Delivery</h2>
+            <p class="center">We will deliver the food on time for cumbum mandal areas like
+                 L.kota, Saidapuram, Kandulapuram etc 
+                 </p>
+        </div>
+        </div>
+         
+              
+    </section>
+    <section id="client-section">
+         <h1 class="h-primary center">Our Clients</h1>
+         <div id="clients">
+          <div class="client-item">
+              <img src="apple.jpg" alt="Our Clients">
+          </div>
+          <div class="client-item">
+            <img src="swiggy.png" alt="Our Clients">
+        </div><div class="client-item">
+            <img src="zomato.jpg" alt="Our Clients">
+        </div><div class="client-item">
+            <img src="shadowfax.png" alt="Our Clients">
+        </div><div class="client-item">
+            <img src="fb logo.png" alt="Our Clients">
+        </div>
+         </div>
+ 
+        </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="mail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" col="20" rows="5"></textarea>
+                </div>
+                <input type="submit">submit
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Lingojipalli_Restuarant.com. All rights reserved; 
+        </div>
+    </footer>
+</body>
+</html>
